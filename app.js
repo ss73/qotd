@@ -5,7 +5,8 @@ const app = express()
 // Quotes are stored in a separate json file containing a list of lists.
 // The top level list contains all the quotes and each quote is a list
 // of the quote itself and who it is attributed to.
-var quotes = JSON.parse(fs.readFileSync('public/quotes.json', 'utf8'));
+console.log(__dirname);
+var quotes = JSON.parse(fs.readFileSync(__dirname + '/public/quotes.json', 'utf8'));
 
 // Use the public sub directory as the root for static content
 app.use(express.static('public'))
