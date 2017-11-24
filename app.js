@@ -8,7 +8,7 @@ const app = express()
 var quotes = JSON.parse(fs.readFileSync(__dirname + '/public/quotes.json', 'utf8'));
 
 // Use the public sub directory as the root for static content
-app.use(express.static('public'))
+app.use(express.static(__dirname + '/public'))
 
 // Request a random quote from the list
 app.get('/random', function(req, res) { 
