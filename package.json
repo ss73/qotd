@@ -13,5 +13,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ss73/qotd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ss73/qotd/issues"
+  },
+  "homepage": "https://github.com/ss73/qotd#readme"
 }
